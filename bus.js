@@ -7,23 +7,18 @@ let ticketdiv = document.getElementById("ticketdiv");
  let bookbtn=document.getElementById("bookbtn")
  console.log(bookbtn)
 
- let navtick=document.getElementById("navtick").value
- console.log(navtick)
+
  let token=1;
 
- function ticketfun(){
- if(parseInt(navtick)===token){
-  Myfuction()
-}
-   else{
-      alert("not allowed")
- }
-
- }
 
 
- bookbtn.addEventListener("click",Myfuction);
-    function Myfuction(){
+
+ bookbtn.addEventListener("click", MyFuction);
+    function MyFuction(){
+
+
+       let navtick=document.getElementById("navtick").value
+ console.log(navtick)
 
 let from=document.getElementById("from")
 // let val=from.value
@@ -53,7 +48,7 @@ console.log(select3)
   token--
 
       if (select1 === "from" || select2 === "to" || name === "" || number === "" || isNaN(ticket)) {
-    alert("Please fill in all required details");
+    return alert("Please fill in all required details");
     
   }
 
@@ -76,7 +71,7 @@ console.log(select3)
  else if(select1==="karaikudi" && select2==="trichy"){
      amount=100*ticket
    }
- else if(select1==="karakudi" && select2==="vilupuram"){
+ else if(select1==="karaikudi" && select2==="vilupuram"){
      amount=200*ticket
    }
   else if(select1==="karaikudi" && select2==="chennai"){
@@ -113,7 +108,7 @@ else{
 let maindiv = document.createElement("div");
 maindiv.id = "maindiv";
 ticketdiv.appendChild(maindiv);
-maindiv.style.minHeight="100vh"
+ticketdiv.style.minHeight="100vh"
 
 // Heading for the ticket
 let resh1one = document.createElement("h1");
@@ -177,6 +172,15 @@ for (let i = 0; i < details.length; i++) {
 
  }
 
+ function ticketfun(){
+ if(parseInt(navtick)===token){
+  Myfuction()
+}
+   else{
+      alert("not allowed")
+ }
+
+ }
 
 
 
@@ -190,45 +194,4 @@ for (let i = 0; i < details.length; i++) {
 
 
 
-
-//   let subdivoneh41=document.createElement("h4")
-//     subdivoneh41.className="subdivoneh4"
-//     subdivoneh41.textContent="From :"+ select1
-//     subdivoneh41.appendChild(subdiv)
-
-//      let subdivoneh42=document.createElement("h4")
-//     subdivoneh42.className="subdivoneh4"
-//     subdivoneh42.textContent="To :"+ select2
-//     subdivoneh42.appendChild(subdiv)
-
-//      let subdivoneh43=document.createElement("h4")
-//     subdivoneh43.className="subdivoneh4"
-//     subdivoneh43.textContent="Name :"+ 
-//     subdivoneh43.appendChild(subdiv)
-
-//      let subdivoneh44=document.createElement("h4")
-//     subdivoneh44.className="subdivoneh4"
-//     subdivoneh44.textContent="Numbar :"+ number
-//     subdivoneh44.appendChild(subdiv)
-
-//      let subdivoneh45=document.createElement("h4")
-//     subdivoneh45.className="subdivoneh4"
-//     subdivoneh45.textContent="Gender :"+ select
-//     subdivoneh45.appendChild(subdiv)
-
-//      let subdivoneh46=document.createElement("h4")
-//     subdivoneh46.className="subdivoneh4"
-//     subdivoneh46.textContent="Age :"+ age
-//     subdivoneh46.appendChild(subdiv) 
-
-//     let subdivoneh47=document.createElement("h4")
-//     subdivoneh47.className="subdivoneh4"
-//     subdivoneh47.textContent="Ticket :"+ ticket
-//     subdivoneh47.appendChild(subdiv)
-    
-//     let subdivoneh48=document.createElement("h4")
-//     subdivoneh48.className="subdivoneh4"
-//     subdivoneh48.textContent="Total Amount :"+select2tal 
-//     subdivoneh48.appendChild(subdiv) 
-
-
+//   
