@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Reservation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+    <!-- navbar start -->
+
+     <nav class="navbar navbar-expand-md  " >
+           <div class="container">
+              <a href="" class="navbar-brand d-black">
+                    <h2 class="nav-h1">BUS BOOKING</h2>
+              </a> 
+              <button class="navbar-toggler bg-light " type="button" data-bs-toggle="collapse" data-bs-target="#myNavBar">
+                 <span class="navbar-toggler-icon"></span>
+              </button>
+               
+              <div class="container"></div> 
+
+               
+<div class="collapse navbar-collapse "  id=myNavBar >
+     <ul class="navbar-nav  text-center mx-auto "  >
+        <li class="nav-item">
+            <a href="" class="nav-a" >Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#booking" class="nav-a" >Booking</a>
+        </li>
+        <li class="nav-item" id="navtick" value=0>
+            <a href="#ticketdiv" class="nav-a" onclick="ticketfun()" >Tickets</a>
+        </li> 
+        <li class="nav-item">
+            <a href="#contact" class="nav-a" >Contact</a>
+        </li>
+     </ul>
+    
+</div>
+</div>
+</nav>
+<!-- navbar end -->
+
+
+
+<div class="container">
+  <div class="row">
+    <div class=" col-md-6" id="home-div-1">
+        <h1 id="home-h1-1">Oneline Bus Booking</h1>
+        <p id="home-p-1">Book your bus tickets in seconds, anytime, anywhere.
+Choose from a wide range of trusted operators.
+Enjoy secure payments and instant confirmations.
+Travel smart with real-time tracking and support.
+Fast & easy online bus ticket booking.
+Travel smart, safe, and stress-free.</p>
+    </div>
+    <div class=" col-md-6">
+        <div class="img-div">
+            <img src="./image/download.jpeg" alt="">
+        </div>
+    </div>
+
+  </div>
+</div>
+
+    </div>
+
+
+
+    <!-- booking -->
+
+    <div id="booking">
+    <h1 class="booking-h1-1">enter your details</h1>
+
+    <form action="">
+
+        <div class="container">
+    <div class="row">
+    <div class=" col-md-6" id="input-div-1">
+
+       
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./image/download.jpeg" class="pic d-block w-100 py-1 px-5" alt="bus" >
+    </div>
+    <div class="carousel-item">
+      <img src="./image/download (3).jpeg" class="pic d-block w-100 py-1 px-5" alt="bus">
+    </div>
+    <div class="carousel-item">
+      <img src="./image/images.jpeg" class="pic d-block w-100 py-1 px-5" alt="bus" >
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+    </div>
+
+
+    <div class=" col-md-6" id="input-div-2">
+
+
+        <div class="row">
+        <div  class="form-floating col-md-6 mt-2 ">
+
+          <select  class="form-control" id="from">
+              <option value="from">From</option>
+               <option value="ramanathapuram">ramanathapuram</option>
+               <option value="karaikudi">karaikudi</option>
+               <option value="trichy">trichy</option>
+               <option value="vilupuram">vilupuram</option>
+            
+
+          </select>
+
+         
+         
+          
+                    <!-- <input type="text" class="form-control" id="from" placeholder="From" required>
+                    <label for="floatingInput">From</label> -->
+        
+        </div>
+
+
+
+        <div class="form-floating col-md-6 mt-2">
+
+            <select  class="form-control" id="to">
+              <option value="to">To</option>
+              
+               <option value="karaikudi">karaikudi</option>
+               <option value="trichy">trichy</option>
+               <option value="vilupuram">vilupuram</option>
+               <option value="chennai">chennai</option> 
+               
+
+          </select>
+
+        <!-- <input type="text" class="form-control" id="to" placeholder="To" required>
+                    <label for="floatingInput">To</label> -->
+        </div>
+
+
+        </div>
+
+         <div class="row mt-2">
+        <div class="form-floating col-md-6 mt-2">
+                    <input type="text" class="form-control" id="name" placeholder="enter your name" >
+                    <label for="floatingInput">Enter your name</label>
+        
+        </div>
+
+        
+
+        <div class="form-floating col-md-6 mt-2">
+        <input type="text" class="form-control" id="number" placeholder="enter your number" required>
+                    <label for="floatingInput">Enter your number</label>
+        </div>
+
+        </div>
+
+
+
+
+         <div class="row mt-2">
+        <div class="form-floating col-md-6 mt-2">
+                    <select name="select" class="form-control" id="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        
+                    </select>
+        
+        </div>
+
+        
+
+        <div class="form-floating col-md-6 mt-2">
+        <input type="text" class="form-control" id="age" placeholder="enter your age" required>
+                    <label for="floatingInput">Enter your Age</label>
+        </div>
+
+        </div>
+
+        
+
+
+     <div class="row mt-2">
+
+         <div class="form-floating col-md-12 ">
+        <input type="text" class="form-control" id="ticket" placeholder="enter your ticket" re>
+                    <label for="floatingInput">How Many Tickets Do  You Want</label>
+        </div>
+     </div>
+
+
+     <div class="button-div">
+        <button type="submit" id="bookbtn">submit</button>
+     </div>
+
+       
+    </div>
+
+  </div>
+</div>
+
+    </form>
+
+    </div>
+
+
+
+    <div id="ticketdiv">
+
+    </div>
+
+
+
+
+
+    <!-- contact -->
+
+
+    <div class="contact1" id="contact">
+    <h1 class="contacth1">CONTACT</h1>
+      <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+       
+
+        <div class=" col-md-12 " id="contactdiv">
+        <ul>
+          <li class="firstli">Book Anytime, Anywhere</li>
+          <li class="firstli">Instant Confirmation</li>
+          <li class="firstli">Safe & Secure Payments</li>
+          <li class="firstli">Easy Cancellations and Refunds</li>
+        </ul>
+
+        </div>
+
+
+         <div class=" col-md-12 " id="contactdiv">
+        
+          <h4 style="text-align: center; color: white; padding-top: 20px;">Address</h4>
+          <ul>
+            <li class="secondli">3rd Floor</li>
+            <li class="secondli">3rd Balamuruhan Street </li>
+            <li class="secondli">Velacheri,600042</li>
+            <li class="secondli">Chennai</li>
+          </ul>
+
+
+        </div>
+
+
+         <div class=" col-md-12 " id="contactdiv">
+
+
+          <ul>
+            <a href=""><i class="fa-brands fa-instagram" id="icon"></i></a> <span>Instagram</span><br>
+            <a href=""><i class="fa-brands fa-facebook" id="icon"></i><a>   <span>Facebook</span><br>
+           <a href=""><i class="fa-brands fa-twitter" id="icon"></i></a>    <span>Twitter</span>
+          </ul>
+
+        </div>
+
+         
+      </div>
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+ crossorigin="anonymous"></script>
+
+ 
+
+ <script src="./bus.js"></script>
+</body>
+</html> 
